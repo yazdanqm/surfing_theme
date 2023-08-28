@@ -1,6 +1,6 @@
 # Surfing Template
 
-This is a front-end template for a surfig board shop 
+This is a front-end template for a surfig board shop using Vite.js, Tailwindcss, Swiper and Vanilla Javascript.
 
 
 ## Run Template
