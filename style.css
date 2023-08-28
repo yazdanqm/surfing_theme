@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*selection*/
+::selection {
+    color: white;
+    background: #5da8ef;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/*fonts*/
+@font-face {
+    font-family: "lspartan";
+    font-display: block;
+    font-style: normal;
+    src: url("./assets/fonts/leaguespartan/leaguespartan_bold.otf");
+}
+
+@font-face {
+    font-family: "playfair";
+    font-display: block;
+    font-style: normal;
+    font-weight: 400;
+    src: url("./assets/fonts/playfair/playfair_regular.otf");
+}
+
+@font-face {
+    font-family: "playfair";
+    font-display: block;
+    font-style: normal;
+    font-weight: 700;
+    src: url("./assets/fonts/playfair/playfair_bold.otf");
+}
+
+@font-face {
+    font-family: "poppins";
+    font-display: block;
+    font-style: normal;
+    font-weight: 200;
+    src: url("./assets/fonts/poppins/poppins_light.otf");
+}
+
+/*  slider */
+.next-slide:hover, .prev-slide:hover {
+    color: #0b0c11;
+}
+
+.top-slider .next-slide, .top-slider .prev-slide {
+    color: #ededed;
+}
+
+.top-slider .pagination-nums {
+    color: #ededed;
+}
+
+.top-slider .swiper-pagination-current {
+    color: #5da8ef;
+}
+
+.top-slider .swiper-pagination-total {
+    color: #0b0c11;
+}
+
+.surfboards .next-slide.swiper-button-disabled, .surfboards .prev-slide.swiper-button-disabled {
+    opacity: .2 !important;
+}
+
+/* pulse animation */
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    from {
+        opacity: 1;
+        scale: 0;
+    }
+
+    to {
+        opacity: 0;
+        scale: 2;
+    }
+}
+
+/* surfboards section */
+.surfboards {
+    background-image: url('./assets/images/surfboards_bg.jpg');
+    background-size: cover;
+    background-position: 0;
+}
+
+/*last section background image*/
+.last-section {
+    background-image: url("./assets/images/last_bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*vertical text*/
+.vertical {
+    writing-mode: vertical-lr;
+}
+
+/*top slider title*/
+@media only screen and (max-width: 1023px) {
+    .top-slider-title , .surf-train-title {
+        writing-mode: unset !important;
+        transform: rotate(0deg) !important;
+    }
+}
+
+/*active navbar*/
+.active-navbar {
+    left: 0 !important;
+}
+
+/*container space*/
+.container {
+    padding: 0 15px;
+    width: 85%;
+}
