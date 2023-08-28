@@ -2,8 +2,6 @@
 
 This is a front-end template for a surfig board shop 
 
-to run the project : 
-
 
 ## Run Template
 
