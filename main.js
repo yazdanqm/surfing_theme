@@ -28,8 +28,8 @@ const swiper = new Swiper('.top-slider', {
     },
 
     navigation: {
-        nextEl: '.next-slide',
-        prevEl: '.prev-slide',
+        nextEl: '.next-top-slide',
+        prevEl: '.prev-top-slide',
     },
 });
 

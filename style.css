@@ -61,11 +61,11 @@
 }
 
 /*  slider */
-.next-slide:hover, .prev-slide:hover {
-    color: #0b0c11;
+.next-slide:hover, .prev-slide:hover , .next-top-slide:hover, .prev-top-slide:hover {
+    color: #0b0c11 !important;
 }
 
-.top-slider .next-slide, .top-slider .prev-slide {
+.top-slider .next-top-slide, .top-slider .prev-top-slide {
     color: #ededed;
 }
 
