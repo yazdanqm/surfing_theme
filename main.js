@@ -1,56 +1,67 @@
-// main style
-import './style.css';
 // icons
-import './assets/fonts/icons/style.css';
+import './assets/styles/style.css';
 
 // swiper
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+//AOS
+import AOS from "aos"
+
+
+// page load listener
+document.addEventListener("DOMContentLoaded" , () => {
+
+    AOS.init({
+        disable: 'mobile',
+        once: true
+
+    });
+})
 
 // top slider configuration
-const swiper = new Swiper('.top-slider', {    
-    spaceBetween : '100px',
+const swiper = new Swiper('.top-slider', {
+    spaceBetween: '100px',
 
     pagination: {
-      el: '.pagination-nums',
-      type: "fraction",
+        el: '.pagination-nums',
+        type: "fraction",
     },
 
     navigation: {
-      nextEl: '.next-slide',
-      prevEl: '.prev-slide',
+        nextEl: '.next-slide',
+        prevEl: '.prev-slide',
     },
-  });
+});
 
-  // surfboards slider configuration
-const surfboardsSwiper = new Swiper('.surfboards-slider', {    
-    slidesPerView : 1,
+// surfboards slider configuration
+const surfboardsSwiper = new Swiper('.surfboards-slider', {
+    slidesPerView: 1,
 
-    breakpoints :{
-      640 : {
-          slidesPerView : 1,
-      },
-        768 : {
-          slidesPerView : 2
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
         },
-        1280 : {
-            slidesPerView : 3
+        768: {
+            slidesPerView: 2
+        },
+        1280: {
+            slidesPerView: 3
         },
     },
 
     pagination: {
-      el: '.pagination-nums',
-      type: "fraction",
+        el: '.pagination-nums',
+        type: "fraction",
     },
 
     navigation: {
-      nextEl: '.next-slide',
-      prevEl: '.prev-slide',
+        nextEl: '.next-slide',
+        prevEl: '.prev-slide',
     },
-  });
+});
 
-  // video player
-  let video = document.getElementById("video")
+// video player
+let video = document.getElementById("video")
 let videoOverlay = document.getElementById("videoOverlay")
 let playVideo = document.getElementById("playVideo")
 let pauseVideo = document.getElementById("pauseVideo")
@@ -58,8 +69,8 @@ let pulse = document.getElementById("pulse")
 let replay = document.getElementById("replay")
 
 
-if (playVideo){
-    playVideo.addEventListener("click" , () => {
+if (playVideo) {
+    playVideo.addEventListener("click", () => {
         video.play()
         playVideo.classList.add("hidden")
         pauseVideo.classList.remove("hidden")
@@ -67,8 +78,8 @@ if (playVideo){
     })
 }
 
-if (pauseVideo){
-    pauseVideo.addEventListener("click" , () => {
+if (pauseVideo) {
+    pauseVideo.addEventListener("click", () => {
         video.pause();
         playVideo.classList.remove("hidden")
         pauseVideo.classList.add("hidden")
@@ -77,19 +88,19 @@ if (pauseVideo){
 }
 
 if (video) {
-    video.addEventListener("ended" , () => {
-        if (!playVideo.classList.contains("hidden")){
+    video.addEventListener("ended", () => {
+        if (!playVideo.classList.contains("hidden")) {
             playVideo.classList.add("hidden")
         }
-        if (!pauseVideo.classList.contains("hidden")){
+        if (!pauseVideo.classList.contains("hidden")) {
             pauseVideo.classList.add("hidden")
         }
         replay.classList.remove("hidden")
     })
 }
 
-if (replay){
-    replay.addEventListener("click" , () => {
+if (replay) {
+    replay.addEventListener("click", () => {
         video.play()
         replay.classList.add("hidden")
         pauseVideo.classList.remove("hidden")
@@ -101,15 +112,15 @@ let navbar = document.getElementById("navbar")
 let overlay = document.getElementById("overlay")
 let openMenu = document.getElementById("openMenu")
 
-if (openMenu){
-    openMenu.addEventListener("click" , () => {
+if (openMenu) {
+    openMenu.addEventListener("click", () => {
         navbar.classList.add("active-navbar")
         overlay.classList.remove("hidden")
     })
 }
 
 if (overlay) {
-    overlay.addEventListener("click" , () => {
+    overlay.addEventListener("click", () => {
         navbar.classList.remove("active-navbar")
         overlay.classList.add("hidden")
     })

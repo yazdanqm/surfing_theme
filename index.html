@@ -4,12 +4,14 @@
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/styles/aos.css" />
     <title>Vite App</title>
 </head>
 <body>
 
 <!--border pattern-->
-<div class="container fixed mx-auto inset-0 -z-10">
+<div class="container fixed mx-auto inset-0">
     <div class="absolute inset-0 grid grid-cols-4 gap-0">
         <div class="h-full border-l border-lighterGray"></div>
         <div class="h-full border-l border-lighterGray"></div>
@@ -20,12 +22,12 @@
 
 <!--nav-->
 <section id="nav">
-    <div class="container mx-auto mt-12">
+    <div class="container relative z-10 mx-auto mt-12">
         <div class="flex items-center">
 
             <div class="flex items-center gap-5">
                 <i id="openMenu" class="icon-menu text-gray text-[30px] lg:hidden"></i>
-                <div class="h-[45px] max-w-[45px] relative z-10">
+                <div data-aos="flip-up" class="h-[45px] max-w-[45px] relative z-10">
                     <img src="./assets/images/logo.png" class="w-full h-full object-contain" alt="surfing theme"
                          title="surfing theme"/>
                 </div>
@@ -34,13 +36,13 @@
             <div id="overlay" class="fixed inset-0 bg-[#00000033] backdrop-blur-sm z-10 hidden"></div>
 
             <div id="navbar" class="max-lg:bg-white max-lg:fixed max-lg:w-[240px] max-lg:inset-y-0 -left-[100%] transition-all max-lg:z-20 flex max-lg:flex-col max-lg:pl-8 pt-8 lg:items-center gap-10 lg:pl-52">
-                <a href="#" title="Stories"
+                <a data-aos="fade-down" href="#" title="Stories"
                    class="font-lspartan !w-fit text-[10px] text-dimBlack tracking-[5px] transition-all hover:text-skyBlue relative before:absolute before:left-0 before:transition-all before:right-[100%] hover:before:right-0 before:h-0.5 before:bottom-0 before:bg-skyBlue">STORIES</a>
-                <a href="#" title="Events"
+                <a data-aos="fade-down" data-aos-delay="200" href="#" title="Events"
                    class="font-lspartan !w-fit text-[10px] text-dimBlack tracking-[5px] transition-all hover:text-skyBlue relative before:absolute before:left-0 before:transition-all before:right-[100%] hover:before:right-0 before:h-0.5 before:bottom-0 before:bg-skyBlue">EVENTS</a>
-                <a href="#" title="Places"
+                <a data-aos="fade-down" data-aos-delay="400" href="#" title="Places"
                    class="font-lspartan !w-fit text-[10px] text-dimBlack tracking-[5px] transition-all hover:text-skyBlue relative before:absolute before:left-0 before:transition-all before:right-[100%] hover:before:right-0 before:h-0.5 before:bottom-0 before:bg-skyBlue">PLACES</a>
-                <a href="#" title="Boards"
+                <a data-aos="fade-down" data-aos-delay="600" href="#" title="Boards"
                    class="font-lspartan !w-fit text-[10px] text-dimBlack tracking-[5px] transition-all hover:text-skyBlue relative before:absolute before:left-0 before:transition-all before:right-[100%] hover:before:right-0 before:h-0.5 before:bottom-0 before:bg-skyBlue">BOARDS</a>
             </div>
 
@@ -52,7 +54,7 @@
 <section>
     <div class="container mx-auto relative max-md:mt-16">
 
-        <div class="lg:!absolute max-md:text-center md:text-right lg:text-left md:-mb-16 lg:mb-0 top-slider-title vertical md:pl-6 rotate-180 !right-0 md:!-right-20 !top-14 md:!-top-6 font-lspartan text-[10px] text-[#dedede] uppercase tracking-[5px]">first surfing magazine</div>
+        <div data-aos="fade-down" data-aos-delay="800" class="lg:!absolute max-md:text-center md:text-right lg:text-left md:-mb-16 lg:mb-0 top-slider-title vertical md:pl-6 rotate-180 !right-0 md:!-right-20 !top-14 md:!-top-6 font-lspartan text-[10px] text-[#dedede] uppercase tracking-[5px]">first surfing magazine</div>
 
 
 
@@ -62,16 +64,16 @@
 
                 <div class="swiper-slide relative sm:pl-[20%] md:pl-56 py-6 md:py-20">
 
-                    <div class="aspect-[18/9] overflow-hidden md:shadow-shadow-3xl">
+                    <div data-aos="zoom-in" data-aos-delay="800" class="aspect-[18/9] overflow-hidden md:shadow-shadow-3xl">
                         <img src="./assets/images/man_surfing_on_the_wave.jpg"
                              class="w-full h-full object-cover"
                              alt="man surfing on the wave">
                     </div>
 
                     <div class="sm:absolute max-sm:mt-6 left-0 top-[50%] sm:translate-y-[-50%]">
-                        <div class="text-skyBlue text-[10px] font-lspartan tracking-[5px]">YOUR</div>
-                        <div class="text-dimBlack text-[25px] md:text-[30px] lg:text-[67px] font-playfair font-bold">Beautiful Escape</div>
-                        <p class="text-lightGray text-[15px] font-poppins">
+                        <div data-aos="fade-left" data-aos-delay="1000" class="text-skyBlue text-[10px] font-lspartan tracking-[5px]">YOUR</div>
+                        <div data-aos="fade-left" data-aos-delay="1100" class="text-dimBlack text-[25px] md:text-[30px] lg:text-[67px] font-playfair font-bold">Beautiful Escape</div>
+                        <p data-aos="fade-left" data-aos-delay="1200" class="text-lightGray text-[15px] font-poppins">
                             One of the greatest things about the sport of surfing <br/>
                             is that you need only three things: your body, <br/>
                             a surfboard, and a wave.
@@ -160,7 +162,7 @@
             </div>
 
 
-            <div class="flex items-center gap-3 max-sm:w-fit max-sm:mx-auto sm:absolute sm:bottom-6 md:bottom-20 z-10">
+            <div data-aos="fade-up" data-aos-delay="1300" class="flex items-center gap-3 max-sm:w-fit max-sm:mx-auto sm:absolute sm:bottom-6 md:bottom-20 z-10">
                 <div class="prev-slide">
                     <i class="icon-left transition-all text-[25px]"></i>
                 </div>
@@ -173,7 +175,7 @@
 
         </div>
 
-        <div class="lg:absolute max-lg:justify-center max-sm:mt-4 lg:-right-20 lg:pr-6 lg:bottom-20 flex lg:flex-col gap-10">
+        <div data-aos="fade-up" data-aos-delay="800" class="lg:absolute max-lg:justify-center max-sm:mt-4 lg:-right-20 lg:pr-6 lg:bottom-20 flex lg:flex-col gap-10">
             <a href="#" title="test" class="text-[25px] text-[#ebebeb] transition-all hover:text-skyBlue">
                 <i class="icon-tumblr"></i>
             </a>
@@ -190,33 +192,33 @@
 
 <!--descriptions-->
 <section class="mt-10 lg:mt-32">
-    <div class="container mx-auto">
+    <div class="container relative z-10 mx-auto">
 
-        <div class="text-lightBlack text-[20px] sm:text-[25px] lg:text-[30px] font-playfair text-center">
+        <div data-aos="fade-up" data-aos-delay="100" class="text-lightBlack text-[20px] sm:text-[25px] lg:text-[30px] font-playfair text-center">
             Surfing is the most blissful experience you can have <br/>
             on this planet, a taste of heaven.
         </div>
 
-        <div class="text-lightBlack text-[10px] font-lspartan tracking-[5px] text-center mt-6">
+        <div data-aos="fade-up" data-aos-delay="300" class="text-lightBlack text-[10px] font-lspartan tracking-[5px] text-center mt-6">
             JOHN MCCARTHY
         </div>
 
-        <div class="bg-skyBlue w-[2px] h-8 sm:h-20 lg:h-32 mx-auto my-10 lg:my-16"></div>
+        <div data-aos="fade-up" data-aos-delay="400" class="bg-skyBlue w-[2px] h-8 sm:h-20 lg:h-32 mx-auto my-10 lg:my-16"></div>
 
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 mt-6">
 
             <div class="order-2 lg:order-1">
-                <div class="aspect-[16/9] overflow-hidden">
+                <div data-aos="fade-down" data-aos-delay="100" class="aspect-[16/9] overflow-hidden">
                     <img src="./assets/images/man_with_board.jpg" class="w-full h-full object-cover"
                          alt="man with borad"/>
                 </div>
 
-                <div class="text-[14px] lg:text-[16px] font-poppins text-midGray lg:max-w-[300px] xl:max-w-[390px] 2xl:mx-auto mt-8 lg:mt-16">
+                <div data-aos="fade-up" data-aos-delay="300" class="text-[14px] lg:text-[16px] font-poppins text-midGray lg:max-w-[300px] xl:max-w-[390px] 2xl:mx-auto mt-8 lg:mt-16">
                     By better understanding the various aspects of surfing, you will improve faster and have more fun in
                     the water.
 
-                    <a href="#"
+                    <a data-aos="fade-up" data-aos-delay="500" href="#"
                        class="block relative w-fit text-dimBlack font-lspartan text-[10px] tracking-[5px] mt-8 lg:mt-16 py-2 before:absolute before:transition-all hover:before:h-1.5 before:bottom-0 before:left-0 before:right-1 before:h-0.5 before:bg-skyBlue"
                        title="read more">
                         READ MORE
@@ -230,7 +232,7 @@
 
                 <div class="lg:absolute max-lg:mb-8 top-14 right-0 bottom-0 -left-28">
 
-                    <div class="relative aspect-[16/12] shadow-shadow-3xl">
+                    <div data-aos="fade-up" data-aos-delay="100" class="relative aspect-[16/12] shadow-shadow-3xl">
 
                         <div class="absolute group inset-0 flex items-center justify-center z-10 overflow-hidden">
 
@@ -273,106 +275,177 @@
 
 <!--surfboards-->
 <section class="surfboards pt-16 lg:pt-[300px]">
-    <div class="text-skyBlue font-lspartan text-[10px] text-center tracking-[5px]">SHOP</div>
-    <div class="text-dimBlack font-playfair text-[25px] lg:text-[45px] text-center font-bold -mt-2">Surfboards</div>
+    <div class="relative z-10">
+        <div data-aos="fade-up" data-aos-delay="200" class="text-skyBlue font-lspartan text-[10px] text-center tracking-[5px]">SHOP</div>
+        <div data-aos="fade-up" data-aos-delay="400" class="text-dimBlack font-playfair text-[25px] lg:text-[45px] text-center font-bold -mt-2">Surfboards</div>
 
-    <div class="relative">
-        <div class="container mx-auto mt-6 lg:mt-14">
-            <div class="swiper surfboards-slider relative">
+        <div class="relative">
+            <div class="container mx-auto mt-6 lg:mt-14">
+                <div class="swiper surfboards-slider relative">
 
-                <div class="swiper-wrapper">
+                    <div class="swiper-wrapper">
 
-                    <div class="swiper-slide !flex justify-center">
+                        <div class="swiper-slide !flex justify-center">
 
-                        <div class="sm:!flex items-center gap-10 relative w-fit">
+                            <div data-aos="fade-up" data-aos-delay="300" class="sm:!flex items-center gap-10 relative w-fit">
 
-                            <div class="w-[118px] h-[420px] max-md:mx-auto md:ml-16 mb-8 block">
-                                <img src="./assets/images/board1.png" alt="board 1"
-                                     class="w-full h-full object-contain object-bottom"/>
-                            </div>
-
-                            <div>
-                                <div class="text-gray text-[13px] font-poppins tracking-widest">FUNBOARDS</div>
-                                <div class="text-lightBlack text-[20px] lg:text-[28px] font-playfair">Chili Rare Bird</div>
-                                <div class="w-fit mx-auto">
-                                    <div class="text-pink text-[18px] lg:text-[22px] font-poppins mt-3 lg:mt-8">$890</div>
-                                    <div class="text-dimBlack text-[10px] font-lspartan tracking-[5px]">BUY</div>
+                                <div class="w-[118px] h-[420px] max-md:mx-auto md:ml-16 mb-8 block">
+                                    <img src="./assets/images/board1.png" alt="board 1"
+                                         class="w-full h-full object-contain object-bottom"/>
                                 </div>
+
+                                <div>
+                                    <div class="text-gray text-[13px] font-poppins tracking-widest">FUNBOARDS</div>
+                                    <div class="text-lightBlack text-[20px] lg:text-[28px] font-playfair">Chili Rare Bird</div>
+                                    <div class="w-fit mx-auto">
+                                        <div class="text-pink text-[18px] lg:text-[22px] font-poppins mt-3 lg:mt-8">$890</div>
+                                        <div class="text-dimBlack text-[10px] font-lspartan tracking-[5px]">BUY</div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#ececec] max-sm:hidden w-60 absolute bottom-0 top-24 -z-10"></div>
                             </div>
 
-                            <div class="bg-[#ececec] max-sm:hidden w-60 absolute bottom-0 top-24 -z-10"></div>
                         </div>
 
-                    </div>
+                        <div class="swiper-slide !flex justify-center">
 
-                    <div class="swiper-slide !flex justify-center">
+                            <div data-aos="fade-up" data-aos-delay="500" class="sm:!flex items-center gap-10 relative w-fit">
 
-                        <div class="sm:!flex items-center gap-10 relative w-fit">
-
-                            <div class="w-[118px] h-[420px] max-md:mx-auto md:ml-16 mb-8 block">
-                                <img src="./assets/images/board2.png" alt="board 2"
-                                     class="w-full h-full object-contain object-bottom"/>
-                            </div>
-
-                            <div>
-                                <div class="text-gray text-[13px] font-poppins tracking-widest">SURFBOARDS</div>
-                                <div class="text-lightBlack text-[20px] lg:text-[28px] font-playfair">Emery NEM XF</div>
-                                <div class="w-fit mx-auto">
-                                    <div class="text-pink text-[18px] lg:text-[22px] font-poppins mt-3 lg:mt-8">$950</div>
-                                    <div class="text-dimBlack text-[10px] font-lspartan tracking-[5px]">BUY</div>
+                                <div class="w-[118px] h-[420px] max-md:mx-auto md:ml-16 mb-8 block">
+                                    <img src="./assets/images/board2.png" alt="board 2"
+                                         class="w-full h-full object-contain object-bottom"/>
                                 </div>
+
+                                <div>
+                                    <div class="text-gray text-[13px] font-poppins tracking-widest">SURFBOARDS</div>
+                                    <div class="text-lightBlack text-[20px] lg:text-[28px] font-playfair">Emery NEM XF</div>
+                                    <div class="w-fit mx-auto">
+                                        <div class="text-pink text-[18px] lg:text-[22px] font-poppins mt-3 lg:mt-8">$950</div>
+                                        <div class="text-dimBlack text-[10px] font-lspartan tracking-[5px]">BUY</div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#ececec] max-sm:hidden w-60 absolute bottom-0 top-24 -z-10"></div>
                             </div>
 
-                            <div class="bg-[#ececec] max-sm:hidden w-60 absolute bottom-0 top-24 -z-10"></div>
                         </div>
 
-                    </div>
+                        <div class="swiper-slide !flex justify-center">
 
-                    <div class="swiper-slide !flex justify-center">
+                            <div data-aos="fade-up" data-aos-delay="700" class="sm:!flex items-center gap-10 relative w-fit">
 
-                        <div class="sm:!flex items-center gap-10 relative w-fit">
-
-                            <div class="w-[118px] h-[420px] max-md:mx-auto md:ml-16 mb-8 block">
-                                <img src="./assets/images/board3.png" alt="board 3"
-                                     class="w-full h-full object-contain object-bottom"/>
-                            </div>
-
-                            <div>
-                                <div class="text-gray text-[13px] font-poppins tracking-widest">FUNBOARDS</div>
-                                <div class="text-lightBlack text-[20px] lg:text-[28px] font-playfair">Agency Grom</div>
-                                <div class="w-fit mx-auto">
-                                    <div class="text-pink text-[18px] lg:text-[22px] font-poppins mt-3 lg:mt-8">$670</div>
-                                    <div class="text-dimBlack text-[10px] font-lspartan tracking-[5px]">BUY</div>
+                                <div class="w-[118px] h-[420px] max-md:mx-auto md:ml-16 mb-8 block">
+                                    <img src="./assets/images/board3.png" alt="board 3"
+                                         class="w-full h-full object-contain object-bottom"/>
                                 </div>
+
+                                <div>
+                                    <div class="text-gray text-[13px] font-poppins tracking-widest">FUNBOARDS</div>
+                                    <div class="text-lightBlack text-[20px] lg:text-[28px] font-playfair">Agency Grom</div>
+                                    <div class="w-fit mx-auto">
+                                        <div class="text-pink text-[18px] lg:text-[22px] font-poppins mt-3 lg:mt-8">$670</div>
+                                        <div class="text-dimBlack text-[10px] font-lspartan tracking-[5px]">BUY</div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#ececec] max-sm:hidden w-60 absolute bottom-0 top-24 -z-10"></div>
                             </div>
 
-                            <div class="bg-[#ececec] max-sm:hidden w-60 absolute bottom-0 top-24 -z-10"></div>
+                        </div>
+
+                        <div class="swiper-slide !flex justify-center">
+
+                            <div data-aos="fade-up" data-aos-delay="900" class="sm:!flex items-center gap-10 relative w-fit">
+
+                                <div class="w-[118px] h-[420px] max-md:mx-auto md:ml-16 mb-8 block">
+                                    <img src="./assets/images/board1.png" alt="board 1"
+                                         class="w-full h-full object-contain object-bottom"/>
+                                </div>
+
+                                <div>
+                                    <div class="text-gray text-[13px] font-poppins tracking-widest">FUNBOARDS</div>
+                                    <div class="text-lightBlack text-[20px] lg:text-[28px] font-playfair">Chili Rare Bird</div>
+                                    <div class="w-fit mx-auto">
+                                        <div class="text-pink text-[18px] lg:text-[22px] font-poppins mt-3 lg:mt-8">$890</div>
+                                        <div class="text-dimBlack text-[10px] font-lspartan tracking-[5px]">BUY</div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#ececec] max-sm:hidden w-60 absolute bottom-0 top-24 -z-10"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide !flex justify-center">
+
+                            <div data-aos="fade-up" data-aos-delay="1100" class="sm:!flex items-center gap-10 relative w-fit">
+
+                                <div class="w-[118px] h-[420px] max-md:mx-auto md:ml-16 mb-8 block">
+                                    <img src="./assets/images/board2.png" alt="board 2"
+                                         class="w-full h-full object-contain object-bottom"/>
+                                </div>
+
+                                <div>
+                                    <div class="text-gray text-[13px] font-poppins tracking-widest">SURFBOARDS</div>
+                                    <div class="text-lightBlack text-[20px] lg:text-[28px] font-playfair">Emery NEM XF</div>
+                                    <div class="w-fit mx-auto">
+                                        <div class="text-pink text-[18px] lg:text-[22px] font-poppins mt-3 lg:mt-8">$950</div>
+                                        <div class="text-dimBlack text-[10px] font-lspartan tracking-[5px]">BUY</div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#ececec] max-sm:hidden w-60 absolute bottom-0 top-24 -z-10"></div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-slide !flex justify-center">
+
+                            <div data-aos="fade-up" data-aos-delay="1300" class="sm:!flex items-center gap-10 relative w-fit">
+
+                                <div class="w-[118px] h-[420px] max-md:mx-auto md:ml-16 mb-8 block">
+                                    <img src="./assets/images/board3.png" alt="board 3"
+                                         class="w-full h-full object-contain object-bottom"/>
+                                </div>
+
+                                <div>
+                                    <div class="text-gray text-[13px] font-poppins tracking-widest">FUNBOARDS</div>
+                                    <div class="text-lightBlack text-[20px] lg:text-[28px] font-playfair">Agency Grom</div>
+                                    <div class="w-fit mx-auto">
+                                        <div class="text-pink text-[18px] lg:text-[22px] font-poppins mt-3 lg:mt-8">$670</div>
+                                        <div class="text-dimBlack text-[10px] font-lspartan tracking-[5px]">BUY</div>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#ececec] max-sm:hidden w-60 absolute bottom-0 top-24 -z-10"></div>
+                            </div>
+
                         </div>
 
                     </div>
 
 
                 </div>
+            </div>
 
+            <div class="prev-slide absolute left-8 top-[50%] translate-y-[-50%]">
+                <i class="icon-left transition-all text-[30px]"></i>
+            </div>
 
+            <div class="next-slide absolute right-8 top-[50%] translate-y-[-50%]">
+                <i class="icon-right transition-all text-[30px]"></i>
             </div>
         </div>
 
-        <div class="prev-slide absolute left-8 top-[50%] translate-y-[-50%]">
-            <i class="icon-left transition-all text-[30px]"></i>
-        </div>
-
-        <div class="next-slide absolute right-8 top-[50%] translate-y-[-50%]">
-            <i class="icon-right transition-all text-[30px]"></i>
-        </div>
+        <a data-aos="fade-up"
+           data-aos-delay="200"
+           href="#"
+           class="block mx-auto mt-20 relative w-fit text-dimBlack font-lspartan text-[10px] tracking-[5px] mt-16 py-2 before:absolute before:transition-all hover:before:h-1.5 before:bottom-0 before:left-0 before:right-1 before:h-0.5 before:bg-skyBlue"
+           title="read more">
+            SHOW ALL
+        </a>
     </div>
-
-    <a href="#"
-       class="block mx-auto mt-20 relative w-fit text-dimBlack font-lspartan text-[10px] tracking-[5px] mt-16 py-2 before:absolute before:transition-all hover:before:h-1.5 before:bottom-0 before:left-0 before:right-1 before:h-0.5 before:bg-skyBlue"
-       title="read more">
-        SHOW ALL
-    </a>
-
 </section>
 
 <!--surf training-->
@@ -381,18 +454,18 @@
         <div class="grid grid-cols-12 gap-y-8 md:gap-y-20 lg:gap-20">
             <div class="col-span-12 lg:col-span-4 flex items-center">
                 <div>
-                    <div class="relative text-dimBlack font-playfair font-bold text-[25px] lg:text-[45px] after:absolute after:bottom-0 after:h-[2px] after:bg-skyBlue after:w-6 after:left-0">
+                    <div data-aos="fade-up" data-aos-delay="200" class="relative text-dimBlack font-playfair font-bold text-[25px] lg:text-[45px] after:absolute after:bottom-0 after:h-[2px] after:bg-skyBlue after:w-6 after:left-0">
                         Surf Training
                         <div class="absolute -bottom-12 font-lspartan text-[130px] text-[#f9f9f9] -z-10">01</div>
                     </div>
 
-                    <p class="text-[16px] font-poppins text-midGray mt-4 lg:mt-8 mb-8 lg:mb-16">
+                    <p data-aos="fade-up" data-aos-delay="400" class="text-[16px] font-poppins text-midGray mt-4 lg:mt-8 mb-8 lg:mb-16">
                         By better understanding the various aspects of <br/>
                         surfing, By better understanding the various <br/>
                         aspects of surfing, you will improve faster and <br/>
                         have more fun in the water.
                     </p>
-                    <a href="#"
+                    <a data-aos="fade-up" data-aos-delay="600" href="#"
                        class="block relative w-fit text-dimBlack font-lspartan text-[10px] tracking-[5px] py-2 before:absolute before:transition-all hover:before:h-1.5 before:bottom-0 before:left-0 before:right-1 before:h-0.5 before:bg-skyBlue"
                        title="read more">
                         READ MORE
@@ -403,7 +476,7 @@
 
                 <div class="lg:absolute max-lg:mb-5 surf-train-title vertical rotate-180 right-0 lg:-right-10 top-0 font-lspartan text-[10px] text-[#dedede] uppercase tracking-[5px]">surf camps</div>
 
-                <div class="aspect-[16/9]">
+                <div data-aos="zoom-in" class="aspect-[16/9]">
                     <img src="./assets/images/man_surfing_on_the_wave3.jpg" class="w-full h-full object-cover"
                          alt="man"/>
                 </div>
@@ -413,29 +486,29 @@
 </section>
 
 <!--point break , notify form and last section-->
-<section class="mt-32 last-section">
-    <div class="container mx-auto">
+<section class="mt-16 lg:mt-32 last-section">
+    <div class="container relative z-10 mx-auto">
         <div class="grid grid-cols-12 gap-y-8 md:gap-y-20 lg:gap-20">
             <div class="col-span-12 lg:col-span-8">
-                <div class="aspect-[16/9] lg:pl-20 xl:pl-72 relative lg:flex items-start">
+                <div data-aos="zoom-in" class="aspect-[16/9] lg:pl-20 xl:pl-72 relative lg:flex items-start">
                     <div class="lg:rotate-[-90deg] max-lg:mb-5 min-w-max lg:absolute lg:left-0 xl:left-52 top-[45px] font-lspartan text-[10px] text-[#dedede] tracking-[5px]">SURF CAMPS</div>
                     <img src="./assets/images/man_in_beach.jpg" class="w-full h-full object-cover" alt="man"/>
                 </div>
             </div>
             <div class="col-span-12 lg:col-span-4 flex items-center">
                 <div>
-                    <div class="relative text-dimBlack font-playfair font-bold text-[25px] lg:text-[45px] after:absolute after:bottom-0 after:h-[2px] after:bg-skyBlue after:w-6 after:left-0">
+                    <div data-aos="fade-up" data-aos-delay="200" class="relative text-dimBlack font-playfair font-bold text-[25px] lg:text-[45px] after:absolute after:bottom-0 after:h-[2px] after:bg-skyBlue after:w-6 after:left-0">
                          Point Break
                         <div class="absolute -bottom-12 font-lspartan text-[130px] text-[#f9f9f9] -z-10">02</div>
                     </div>
 
-                    <p class="text-[16px] font-poppins text-midGray mt-4 lg:mt-8 mb-8 lg:mb-16">
+                    <p data-aos="fade-up" data-aos-delay="400" class="text-[16px] font-poppins text-midGray mt-4 lg:mt-8 mb-8 lg:mb-16">
                         By better understanding the various aspects of <br/>
                         surfing, By better understanding the various <br/>
                         aspects of surfing, you will improve faster and <br/>
                         have more fun in the water.
                     </p>
-                    <a href="#"
+                    <a data-aos="fade-up" data-aos-delay="600" href="#"
                        class="block relative w-fit text-dimBlack font-lspartan text-[10px] tracking-[5px] py-2 before:absolute before:transition-all hover:before:h-1.5 before:bottom-0 before:left-0 before:right-1 before:h-0.5 before:bg-skyBlue"
                        title="read more">
                         READ MORE
@@ -444,18 +517,18 @@
             </div>
         </div>
 
-        <div class="bg-skyBlue w-[2px] h-8 sm:h-20 lg:h-32 mx-auto mt-24 lg:mt-32 mb-10 lg:mb-16"></div>
+        <div data-aos="fade-up" data-aos-delay="200" class="bg-skyBlue w-[2px] h-8 sm:h-20 lg:h-32 mx-auto mt-24 lg:mt-32 mb-10 lg:mb-16"></div>
 
-        <div class="relative text-dimBlack font-playfair font-bold text-[25px] lg:text-[45px] text-center">
+        <div data-aos="fade-up" data-aos-delay="300" class="relative text-dimBlack font-playfair font-bold text-[25px] lg:text-[45px] text-center">
             Join The Club
         </div>
 
-        <p class="text-[16px] font-poppins text-midGray text-center mt-6">
+        <p data-aos="fade-up" data-aos-delay="400" class="text-[16px] font-poppins text-midGray text-center mt-6">
             By better understanding the various aspects of surfing, you will improve faster <br />
             and have more fun in the water.
         </p>
 
-        <form action="#" class="mt-12">
+        <form data-aos="fade-up" data-aos-delay="300" action="#" class="mt-12">
             <div class="flex items-center h-[50px] max-w-[600px] w-full mx-auto">
 
                 <input type="email" name="email" placeholder="YOUR E-MAIL" class="bg-[#f5f5f5] placeholder:text-lightBlack w-full h-full pl-4 outline-none border-transparent uppercase font-lspartan text-dimBlack text-[10px] tracking-[5px]" />
@@ -468,9 +541,9 @@
 
     </div>
 
-    <div class="grid grid-cols-12 gap-y-10 mt-14 lg:mt-40">
+    <div class="grid grid-cols-12 gap-y-10 relative z-10 mt-14 lg:mt-40">
         <div class="col-span-12 lg:col-span-6">
-            <div class="aspect-[16/9]">
+            <div data-aos="zoom-in" class="aspect-[16/9]">
                 <img src="./assets/images/friends.jpg" class="w-full h-full object-cover"
                      alt="friends"/>
             </div>
@@ -478,15 +551,15 @@
         <div class="col-span-12 lg:col-span-6 flex items-center pl-8 lg:pl-20">
             <div>
 
-                <div class="font-lspartan text-[10px] text-[#dedede] tracking-[5px]">OUR CAMP</div>
+                <div data-aos="fade-up" data-aos-delay="200" class="font-lspartan text-[10px] text-[#dedede] tracking-[5px]">OUR CAMP</div>
 
-                <div class="relative text-dimBlack font-playfair font-bold text-[25px] lg:text-[35px] lg:pl-14 my-8 lg:my-14">
+                <div data-aos="fade-up" data-aos-delay="400" class="relative text-dimBlack font-playfair font-bold text-[25px] lg:text-[35px] lg:pl-14 my-8 lg:my-14">
                     CA 91932, USA <br />
                     Imperial Beach <br />
                     560 Silver Strand Blvd
                 </div>
 
-                <a href="#"
+                <a data-aos="fade-up" data-aos-delay="600" href="#"
                    class="block relative w-fit text-skyBlue font-lspartan text-[10px] tracking-[5px] py-2 before:absolute before:transition-all hover:before:h-1.5 before:bottom-0 before:left-0 before:right-1 before:h-0.5 before:bg-skyBlue"
                    title="read more">
                     READ MORE
@@ -498,26 +571,26 @@
 </section>
 
 <!--footer-->
-<section class="mt-14 lg:mt-32 pb-14 lg:pb-32">
+<section class="mt-14 lg:mt-32 pb-14 relative z-10 lg:pb-32">
     <div class="container mx-auto">
 
-        <div class="h-[45px] max-w-[45px] mx-auto relative z-10">
+        <div data-aos="zoom-out" data-aos-delay="200" class="h-[45px] max-w-[45px] mx-auto relative z-10">
             <img src="./assets/images/logo.png" class="w-full h-full object-contain" alt="surfing theme"
                  title="surfing theme"/>
         </div>
 
         <div class="flex max-sm:flex-col items-center justify-center gap-10 my-14">
-            <a href="#" title="Stories"
+            <a data-aos="fade-up" data-aos-delay="300" href="#" title="Stories"
                class="font-lspartan text-[10px] text-dimBlack tracking-[5px] transition-all hover:text-skyBlue relative before:absolute before:left-0 before:transition-all before:right-[100%] hover:before:right-0 before:h-0.5 before:bottom-0 before:bg-skyBlue">STORIES</a>
-            <a href="#" title="Events"
+            <a data-aos="fade-up" data-aos-delay="500" href="#" title="Events"
                class="font-lspartan text-[10px] text-dimBlack tracking-[5px] transition-all hover:text-skyBlue relative before:absolute before:left-0 before:transition-all before:right-[100%] hover:before:right-0 before:h-0.5 before:bottom-0 before:bg-skyBlue">EVENTS</a>
-            <a href="#" title="Places"
+            <a data-aos="fade-up" data-aos-delay="700" href="#" title="Places"
                class="font-lspartan text-[10px] text-dimBlack tracking-[5px] transition-all hover:text-skyBlue relative before:absolute before:left-0 before:transition-all before:right-[100%] hover:before:right-0 before:h-0.5 before:bottom-0 before:bg-skyBlue">PLACES</a>
-            <a href="#" title="Boards"
+            <a data-aos="fade-up" data-aos-delay="900" href="#" title="Boards"
                class="font-lspartan text-[10px] text-dimBlack tracking-[5px] transition-all hover:text-skyBlue relative before:absolute before:left-0 before:transition-all before:right-[100%] hover:before:right-0 before:h-0.5 before:bottom-0 before:bg-skyBlue">BOARDS</a>
         </div>
 
-        <div class="flex items-center justify-center gap-10">
+        <div data-aos="fade-up" data-aos-delay="1100" class="flex items-center justify-center gap-10">
             <a href="#" title="test" class="text-[25px] text-[#ebebeb] transition-all hover:text-skyBlue">
                 <i class="icon-tumblr"></i>
             </a>
@@ -533,6 +606,6 @@
 </section>
 
 
-<script type="module" src="/main.js"></script>
+<script type="module" src="./main.js"></script>
 </body>
 </html>
